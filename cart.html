@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<title>Add To Cart | E commerce website</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" ty href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="logo.png" width="125px" height="100px"></a>
+		</div>
+		<nav>
+			<ul id="menuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="aboutus.html">Abouts Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="account.html">Accounts</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="cart.jpg" width="30px" height="30px"></a>
+		<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+
+   <!--------------cart itm detils---------->
+   <div class="small-container cart-page">
+       <table>
+           <tr>
+               <th>Product</th>
+               <th>Quantity</th>
+               <th>subtotal</th>
+           </tr>
+           <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="6.jpg">
+                    <div>
+                        <p>Mangoes</p>
+                        <small>Price: Rs 100/kg</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                    
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>RS 100</td>
+           </tr>
+            <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="8.jpg">
+                    <div>
+                        <p>Apples</p>
+                        <small>Price: Rs 120/kg</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                    
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>RS 120</td>
+           </tr>
+            <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="18.jpg">
+                    <div>
+                        <p>Oranges</p>
+                        <small>Price: Rs 80/kg</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                    
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>RS 80</td>
+           </tr>
+       </table>
+       <div class="total-price">
+           <table>
+               <tr>
+                   <td>Sub Total</td>
+                   <td> Rs 300</td>
+               </tr>
+               <tr>
+                   <td>Tax</td>
+                   <td>Rs 45.35</td>
+               </tr>
+               <tr>
+                   <td>Subtotal</td>
+                   <td>Rs 345.35</td>
+               </tr>
+           </table>
+       </div>
+
+
+
+
+
+
+
+
+
+
+   </div>
+
+  
+    
+
+
+
+    <!-----------------------footer------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Thanks for visiting our website.</h3>
+                    <p>Our Purpose Is To Sustainably Make pleasure and benefits for your health to many</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3><img src="logo.png"></h3>
+                    <p>“Save the Planet...Buy Organic”</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>COUPONS</li>
+                        <li>REVIEW POST</li>
+                        <li>RTURN POLICY</li>
+                <li><a href="account.html">JOIN US</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="www.Facebook.com">Facebook</a></li>
+                        <li><a href="www.twitter.com">Twitter</a></li>
+                        <li><a href="www.Instagram.com">Instagram</a></li>
+                        <li><a href="www.youtube.com">You Tube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyrights"> Copyrights 2020- projrct website<br> Designed by @amit kumar</p>
+        </div>
+    </div>
+
+    <!------------------------js for toggle menu--------------->
+    <script>
+    	var menuItems = document.getElementById("menuItems");
+    	menuItems.style.maxHeight = "0px";
+    	function menutoggle(){
+    		if(menuItems.style.maxHeight == "0px")
+    		{
+    			menuItems.style.maxHeight = "200px"
+    		}
+    		else
+    		{
+    			menuItems.style.maxHeight = "0px"
+    		}
+    	}
+    </script>
+
+
+</body>
+</html>

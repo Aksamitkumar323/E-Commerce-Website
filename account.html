@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<title>Add To Cart | E commerce website</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" ty href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+      <a href="index.html"><img src="logo.png" width="125px" height="100px"></a>
+		</div>
+		<nav>
+			<ul id="menuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="aboutus.html">Abouts Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="account.html">Accounts</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="cart.jpg" width="30px" height="30px"></a>
+		<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+    <!------------------accounts----------------->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="555.png" width="100%" height="580px">
+          </div>
+
+           <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Log In</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator">
+              </div>
+              <form id="LoginForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">log In</button>
+                <a href="">Forget Password</a>
+              </form>
+
+               <form id="RegForm">
+                <input type="text" placeholder="Username" required>
+                <input type="Email" placeholder="Email" required>
+                <input type="password" placeholder="Password" require>
+                <button type="submit" class="btn">Register</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-----------------------footer------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Thanks for visiting our website.</h3>
+                    <p>Our Purpose Is To Sustainably Make pleasure and benefits for your health to many</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3><img src="logo.png"></h3>
+                    <p>“Save the Planet...Buy Organic”</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>COUPONS</li>
+                        <li>REVIEW POST</li>
+                        <li>RTURN POLICY</li>
+                <li><a href="account.html">JOIN US</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="www.Facebook.com">Facebook</a></li>
+                        <li><a href="www.twitter.com">Twitter</a></li>
+                        <li><a href="www.Instagram.com">Instagram</a></li>
+                        <li><a href="www.youtube.com">You Tube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyrights"> Copyrights 2020- projrct website<br> Designed by @amit kumar</p>
+        </div>
+    </div>
+    <!------------------------js for toggle menu--------------->
+    <script>
+    	var menuItems = document.getElementById("menuItems");
+    	menuItems.style.maxHeight = "0px";
+    	function menutoggle(){
+    		if(menuItems.style.maxHeight == "0px")
+    		{
+    			menuItems.style.maxHeight = "200px"
+    		}
+    		else
+    		{
+    			menuItems.style.maxHeight = "0px"
+    		}
+    	}
+    </script>
+    <!----------------js for toggle form----------->
+    <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function register() {
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)"; 
+
+      }
+
+      function login() {
+
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)"; 
+
+      }
+
+
+
+    </script>
+
+
+</body>
+</html>
